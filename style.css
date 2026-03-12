@@ -3,19 +3,16 @@
   --black: #13131a;
   --bg: #010103;
   --border:0.1rem solid rgba(255,255,255,0.3);
-  /* height of the fixed header so we can offset sections below it */
+
   --header-height: 7rem;
   font-size: 10px;
 }
 
-<<<<<<< HEAD
+
 body {
   background-color: rgb(255, 255, 255);
 }
 
-
-=======
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
 *{
   margin: 0;
   padding: 0;
@@ -24,18 +21,9 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.2s linear;
-<<<<<<< HEAD
   font-family: "Roboto", sans-serif;
 }
 
-=======
-   font-family: "Roboto", sans-serif;
-}
-
-body {
-background-color: black;
-}
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
 
 section{
 padding: 3rem 2rem;
@@ -44,27 +32,14 @@ max-width: 1200px;
 }
 
 .header{
-<<<<<<< HEAD
   background-color: white;
-=======
-  background-color: var(--bg);
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
   position: fixed;
   top: 0;
   left: 0;
   right: 0; 
   z-index: 99;
-<<<<<<< HEAD
   border-bottom: black;
-  /* force a consistent height so we know the offset value */
-  /* height: var(--header-height); */
   height: 12rem;
-=======
-  border-bottom: var(--border);
-  /* force a consistent height so we know the offset value */
-  /* height: var(--header-height); */
-  height: 10rem;
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
 }
 
 .header section{
@@ -76,24 +51,18 @@ padding-bottom: 1.5rem;
 
 }
 
-<<<<<<< HEAD
 .logo img {
   height: 100px;
   width: auto;
 }
 
-=======
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
+
 
 
 .navbar a{
   margin: 0 1rem;
   font-size: 1.8rem;
-<<<<<<< HEAD
   color: #000000;
-=======
-  color: #fff;
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
   background: none;
   cursor: pointer;
 }
@@ -117,60 +86,42 @@ padding-bottom: 1.5rem;
 
 .btn{
   background: var(--main-color);
-<<<<<<< HEAD
-  color: #ffffff;
-=======
-  color: #fff;
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
+  color: #000000;
   padding: 1rem 3rem;
   font-size: 1.7rem;
   cursor: pointer;
   margin-top: 1rem;
   display: inline-block;
+  border-radius: 10px;
 }
 
 .btn:hover{
   letter-spacing: 0.1rem;
 }
 
-<<<<<<< HEAD
+
 header {
   background-color: rgb(255, 255, 255);
 }
 
 .home-container{
-  /* start the hero just below the fixed navbar and keep full image visible */
-  background: url("./imgs/home.jpg") center center/cover no-repeat;
-=======
-.home-container{
-  /* start the hero just below the fixed navbar and keep full image visible */
-  background: url("./imgs/home.jpeg") center center/cover no-repeat;
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
-  /* subtract the header height so the visible portion of the image isn't hidden */
+  background: url("./imgs/homewhite.jpg") center center/cover no-repeat;
   height: calc(100vh - var(--header-height));
-  /* push the container down by the same amount */
   margin-top: var(--header-height);
-  /* ensure the box sizing includes the margin for layout calculations */
   box-sizing: border-box;
-<<<<<<< HEAD
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-=======
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
 }
 
 .home-container section{
-  align-items: center;
-<<<<<<< HEAD
-  margin-left: 0.5px;
-  display: flex;
-  min-height: 55vh;
-=======
-  display: flex;
-  min-height: 100vh;
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
+align-items: center;
+margin-left: 0.5px;
+display: flex;
+min-height: 55vh;
+display: flex;
+
 }
 
 .content {
@@ -178,27 +129,19 @@ header {
 }
 
 .content h3{
-<<<<<<< HEAD
-  color: #ffffff;
-=======
-  color: #fff;
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
+  color: #000000;
   font-size: 6rem;;
 }
 
 .content p{
-<<<<<<< HEAD
-  color: #ffffff;
-=======
-  color: #fff;
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
+  color: #000000;
   font-size: 2rem;
   font-weight: 100;
   line-height: 1.8;
   padding: 1rem 0;
 }
 
-<<<<<<< HEAD
+
 .span {
   color: var(--main-color);
 }
@@ -239,7 +182,7 @@ header {
 }
 
 .cake {
-  color: white;
+  color: rgb(0, 0, 0);
 
 }
 
@@ -301,144 +244,27 @@ max-width: content;
   border-radius: 20px;
 }
 
-=======
-.title{
-  font-size: 4rem;
-  color: var(--main-color);
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
-}
 
-.title span{
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.about .row{
-  display: flex;
-  align-items: center;
-  background-color: var(--black);
-  gap: 1.5rem;
-}
-
-.about .row .content{
-  padding: 2rem;
-}
-
-.about .row .content h3{
-font-size: 3rem;
-color: #fff;
-}
-
-.about .row .content p{
-font-size: 1.6rem;
-color: #fff;
-padding: 1rem 0;
-line-height: 1.8;
-
-}
-
-.box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
-}
-
-.menu .box-container .box {
-  text-align: center;
-  border: var(--border);
-  padding: 5rem;
-  cursor: pointer;
-  border-radius: 1rem;
-}
-
-.menu .box-container .box:hover {
-  background-color: #fff;
-}
-
-
-
-.menu .box-container .box img {
-  height: 10rem;
-
-}
-
-.menu .box-container .box h3 {
-  color: #fff;
-  font-size: 2rem;
-  padding: 1rem 0;
-}
-
-.menu .box-container .box .price{
-  color: #fff;
-  font-size: 2.5rem;
-  padding: 0.5rem;
-}
-
-.menu .box-container .box .price span {
-  font-size: 1.5rem;
-  text-decoration: line-through;
-  font-weight: lighter;
-}
-
-.menu .box-container .box:hover>* {
-  color: var(--black);
-}
-
-.review .box-container .box{
-  border: var(--border);
-  text-align: center;
-  padding: 3rem 2rem;
-  border-radius: 1rem;
-}
-
-.review .box-container .box p {
-  font-size: 1.5rem;
-  color: #fff;
-  padding: 2rem 0;
-  line-height: 1.8;
-  font-weight: lighter;
-}
-
-.review .box-container .box h3{
-  color: #fff;
-  font-size: 1rem;
-  margin: 2rem;
-}
-
-.review .box-container .box .user {
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50%;
-}
-
-
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
 .address {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-<<<<<<< HEAD
 
-=======
+
 .endereço {
   border-radius: 1rem;
 }
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
+
 
 .footer {
   text-align: center;
 }
 
 .footer .share {
-<<<<<<< HEAD
   padding: 1rem ;
-=======
-  padding: 1rem 0;
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
+
 }
 
 .footer .share img {
@@ -449,9 +275,5 @@ line-height: 1.8;
 }
 
 .footer .share img:hover {
-<<<<<<< HEAD
-  background-color: rgb(0, 0, 0);
-=======
-  background-color: var(--main-color);
->>>>>>> c622e5ed72e8868e03ef4ce905cad7d4b0b87166
+  background-color: rgb(158, 153, 153);
 }
