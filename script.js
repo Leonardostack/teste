@@ -21,13 +21,23 @@ function historia() {
     }
 }
 
-function produtos() {
+function cheescake() {
     if (window.location.pathname.includes('/pages/')) {
-        if (!window.location.pathname.endsWith('produto.html')) {
-            window.location.href = 'produto.html';
+        if (!window.location.pathname.endsWith('cheescake.html')) {
+            window.location.href = 'cheescake.html';
         }
     } else {
-        window.location.href = 'pages/produto.html';
+        window.location.href = 'pages/cheescake.html';
+    }
+}
+
+function trufado() {
+    if (window.location.pathname.includes('/pages/')) {
+        if (!window.location.pathname.endsWith('trufado.html')) {
+            window.location.href = 'trufado.html';
+        }
+    } else {
+        window.location.href = 'pages/trufado.html';
     }
 }
 
