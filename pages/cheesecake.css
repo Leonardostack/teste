@@ -1,0 +1,184 @@
+:root {
+  --main-color: #b8860b;       /* dourado escuro — cor principal */
+  --gold-light: #e2c97e;       /* dourado claro — bordas e detalhes */
+  --gold-accent: #c9a84c;      /* dourado médio — acentos */
+  --white: #ffffff;
+  --off-white: #fffdf5;        /* branco creme — fundo suave */
+  --bg: #fdf6e3;               /* fundo de seções gourmet */
+  --text-dark: #1a1a1a;        /* texto principal */
+  --text-muted: #777777;       /* texto secundário */
+  --border: 0.1rem solid #e2c97e;
+  --header-height: 7rem;
+
+  font-size: 10px;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Georgia", "Roboto", serif;
+  transition: 0.2s linear;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--text-dark);
+}
+
+/* LAYOUT PADRÃO */
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--white);
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: 0.15rem solid var(--gold-light);
+  height: 12rem;
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+/* NAVBAR */
+.navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #DAA520;
+  background: none;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  /* text-transform: uppercase; */
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+  font-size: 1.7rem;
+}
+
+/* ÍCONES */
+.icons img {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(60%)
+          saturate(500%) hue-rotate(5deg) brightness(90%);
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(0) saturate(100%) invert(40%) sepia(80%)
+          saturate(600%) hue-rotate(5deg) brightness(85%);
+}
+
+/* MAIN */
+.fundoblack {
+  margin-top: var(--header-height);
+  background-color: var(--off-white);
+}
+
+/* PRODUTOS */
+.produto-container {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.produto-container img {
+  max-width: 40%;
+  border-radius: 20px;
+  border: 0.1rem solid var(--gold-light);
+}
+
+
+.info {
+  max-width: 500px;
+}
+
+.preco {
+  color: var(--main-color);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.titulo {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.descricao {
+  color: var(--text-muted);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+/* BOTÃO */
+.btn-grade {
+  padding: 1.2rem 3.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--main-color);
+  border: 0.15rem solid var(--main-color);
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+.btn-grade:hover {
+  background-color: var(--white);
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 5rem;
+  background-color: var(--off-white);
+  padding: 3rem 2rem;
+  border-top: 0.1rem solid var(--gold-light);
+}
+
+.footer .share img {
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(60%)
+          saturate(500%) hue-rotate(5deg) brightness(90%);
+}
+
+.footer .share img:hover {
+  background-color: var(--gold-light);
+}

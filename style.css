@@ -10,7 +10,7 @@
 
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #fffdf5;
 }
 
 *{
@@ -32,13 +32,15 @@ max-width: 1200px;
 }
 
 .header{
-  background-color: rgb(0, 0, 0);
+  background-color: #fffdf5;
+  border: 1px solid  #DAA520 ;
   position: fixed;
+  border-radius: 20px;
   top: 0;
   left: 0;
   right: 0; 
   z-index: 99;
-  border-bottom: rgb(255, 255, 255);
+  border-bottom: rgb(0, 0, 0);
   height: 12rem;
 }
 
@@ -62,7 +64,7 @@ padding-bottom: 1.5rem;
 .navbar a{
   margin: 0 1rem;
   font-size: 1.8rem;
-  color: #ffffff;
+  color:   #DAA520;
   background: none;
   cursor: pointer;
 }
@@ -85,8 +87,8 @@ padding-bottom: 1.5rem;
 }
 
 .btn{
-  background: var(--main-color);
-  color: #ffffff;
+  background:   linear-gradient(to right, #B38728, #FBF5B7, #DAA520);
+  color:  #ffffff;
   padding: 1rem 3rem;
   font-size: 1.7rem;
   cursor: pointer;
@@ -100,12 +102,10 @@ padding-bottom: 1.5rem;
 }
 
 
-header {
-  background-color: rgb(0, 0, 0);
-}
+
 
 .home-container{
-  background: url("./imgs/home.jpg") center center/cover no-repeat;
+  background: url("./imgs/image1.jpg") center center/cover no-repeat;
   height: calc(100vh - var(--header-height));
   margin-top: var(--header-height);
   box-sizing: border-box;
@@ -143,7 +143,7 @@ display: flex;
 
 
 .span {
-  color: var(--main-color);
+  color:#c9a84c ;
 }
 
 .produtos {
@@ -152,20 +152,26 @@ display: flex;
 
 .produtos h2 {
   display: flex;
-  color: rgb(255, 255, 255);
+  color: #000000;
   font-size: 4rem;
   align-items: center;
   justify-content: center;
 
 }
 
-.imgs{
+.images{
   display: flex;
   justify-content: center;
   gap: 20px;
   width: auto;
   height: 80vh;
   margin-top: 70px;
+}
+
+.images img {
+  width: auto;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .botao {
@@ -176,7 +182,7 @@ display: flex;
 }
 
 .btn-grad {
-  background-image: linear-gradient(to right, #d3ad7f 0%, #ff2c2c 51%, #d3ad7f 100%);
+  background-image: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
 }
 
 .btn-grad {
@@ -186,8 +192,8 @@ display: flex;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;            
-  box-shadow: 0 0 20px #eee;
+  color: rgb(0, 0, 0);            
+  box-shadow: 0 0 20px #0000008a;
   border-radius: 10px;
   display: block;
   outline: none;
@@ -197,7 +203,7 @@ display: flex;
 
 .btn-grad:hover {
   background-position: right center; /* change the direction of the change here */
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -205,18 +211,18 @@ display: flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(0, 0, 0);
+  background-color: #fffdf5;
+ 
 }
 
 .fundoblack {
-  background-color: rgb(0, 0, 0);
+  background-color: #fffdf5;
   background-size: cover;
   width: 100%;
 }
 
 .cake {
-  color: rgb(255, 255, 255);
-
+  color: #000000;
 }
 
 .cake h2 {
@@ -229,11 +235,11 @@ display: flex;
 }
 
 .red {
-color: rgb(236, 40, 40);
+color: rgb(138, 0, 0);
 }
 
 .main p {
-  color: rgb(255, 255, 255);
+  color: #000000;
   justify-items: left;
   justify-content: left;
   font-size: 25px;
@@ -248,6 +254,7 @@ color: rgb(236, 40, 40);
   height: 500px;
   margin-left: auto;
   margin-top: 10rem;
+  border-radius: 20px;
 
 }
 
@@ -260,12 +267,12 @@ max-width: content;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin-top: 40px;
 }
 
 .address {
-  background-color: rgb(0, 0, 0);
+  background-color: #fffdf5;
   background-size: cover;
   width: 100%;
 }
@@ -308,5 +315,5 @@ max-width: content;
 }
 
 .footer .share img:hover {
-  background-color: rgb(158, 153, 153);
+  background-color: rgba(211, 169, 31, 0.452);
 }
