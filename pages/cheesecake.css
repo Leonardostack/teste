@@ -39,21 +39,26 @@ section {
 
 /* HEADER */
 .header {
-  background-color: var(--white);
-  border-radius: 20px;
+  background-color: #ffffff;
+  border: 1px solid #DAA520;
   position: fixed;
+  border-radius: 20px;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
-  border-bottom: 0.15rem solid var(--gold-light);
   height: 12rem;
+  padding: 0 1.5rem;
 }
 
 .header section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  gap: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -64,13 +69,20 @@ section {
 }
 
 /* NAVBAR */
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .navbar a {
-  margin: 0 1rem;
-  font-size: 1.6rem;
+  margin: 0;
+  font-size: 1.8rem;
   color: #DAA520;
   background: none;
   cursor: pointer;
-  letter-spacing: 0.1rem;
   /* text-transform: uppercase; */
 }
 
@@ -78,7 +90,7 @@ section {
   color: var(--main-color);
   border-bottom: 0.1rem solid var(--main-color);
   padding-bottom: 0.5rem;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 /* ÍCONES */
@@ -144,41 +156,36 @@ section {
 
 /* BOTÃO */
 .btn-grade {
-  padding: 1.2rem 3.5rem;
-  border-radius: 10px;
+  background:   linear-gradient(to right, #B38728, #FBF5B7, #DAA520);
+  color:  #000000;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
   cursor: pointer;
-  color: var(--white);
-  background-color: var(--main-color);
-  border: 0.15rem solid var(--main-color);
-  font-size: 1.4rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 10px;
 }
 
-.btn-grade:hover {
-  background-color: var(--white);
-  color: var(--main-color);
-  border-color: var(--main-color);
-}
+
 
 /* FOOTER */
 .footer {
   text-align: center;
-  margin-top: 5rem;
-  background-color: var(--off-white);
-  padding: 3rem 2rem;
   border-top: 0.1rem solid var(--gold-light);
 }
 
+.footer .share {
+  padding: 1rem ;
+
+}
+
 .footer .share img {
-  margin: 0.5rem;
-  padding: 1rem;
-  border-radius: 50%;
+  margin: 0.3rem;
   cursor: pointer;
-  filter: brightness(0) saturate(100%) invert(50%) sepia(60%)
-          saturate(500%) hue-rotate(5deg) brightness(90%);
+  border-radius: 50%;
+  padding: 2rem;
 }
 
 .footer .share img:hover {
-  background-color: var(--gold-light);
+  background-color: rgba(211, 169, 31, 0.452);
 }
